@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>嘉晚饭站 | 嘉晚饭，赢！</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <!-- 引入外部 CSS 文件 -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- 百度统计等外部脚本 -->
+  <script src="js/analytics.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <h1>嘉晚饭宇宙</h1>
+      <div class="random-sentence">
+        <span class="sentence-left">🍬</span>
+        <p id="random-sentence">嘉晚饭</p>
+        <span class="sentence-right">🥣</span>
+      </div>
+    </header>
+  </div>
+
+  <div class="container">
+    <main class="main-content">
+      <div class="card">
+        <h2 style="color: var(--primary);">🎨 嘉晚画廊</h2>
+        <div class="gallery" id="pixiv-gallery">
+          <p id="loading-message" style="text-align:center;">正在加载画廊内容……</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 style="color: var(--secondary);">⏳ 历史时刻</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3 style="color: var(--primary);">· 2021年</h3>
+            <a href="https://www.bilibili.com/video/BV1UM4y1c7ZZ/">【嘉晚饭2021年高光时刻回顾】我不管 嘉晚饭就是T0！ UP:回梦游仙479</a>
+          </div>
+          <div class="timeline-item">
+            <h3 style="color: var(--primary);">· 2022年</h3>
+            <a href="https://www.bilibili.com/video/BV1Eg411x7tT/">【嘉然x向晚】嘉晚饭2022年度名场面Top10总结 UP:龙王归来之做甲方主人</a>
+          </div>
+          <div class="timeline-item">
+            <h3 style="color: var(--primary);">· 2023年</h3>
+            <a href="https://www.bilibili.com/video/BV1PK4y167PL/">嘉晚饭丨2023年度合集 UP:swallowtail9</a>
+          </div>
+          <div class="timeline-item">
+            <h3 style="color: var(--primary);">· 2024年</h3>
+            <a href="https://www.bilibili.com/video/BV15acVepEjk/">【2024年】嘉晚饭互动TOP20 UP:炉芯终曲</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <aside class="sidebar">
+      <!-- 精选切片部分：容器由 JS 动态填充随机选取的视频 -->
+      <div class="card" id="video-card">
+        <h2 style="color: var(--secondary);">📺 精选切片</h2>
+        <div id="random-videos"></div>
+      </div>
+
+      <div class="card">
+        <h2 style="color: var(--primary);">🏠 糖瓷碗小家</h2>
+        <ul style="list-style: none; padding: 0;">
+          <li style="padding: 0.8rem; background: rgba(255, 192, 203, 0.20); border-radius: 8px; text-align: center;">
+            <a href="https://space.bilibili.com/2004948206" target="_blank">💖B站嘉晚饭周报</a>
+          </li>
+          <li style="padding: 0.8rem; background: rgba(0, 128, 0, 0.15); border-radius: 8px; text-align: center;">
+            <a href="https://www.douban.com/group/726457/" target="_blank">💖豆瓣嘉晚饭小组</a>
+          </li>
+          <li style="padding: 0.8rem; background: rgba(0, 0, 255, 0.15); border-radius: 8px; text-align: center;">
+            <a href="https://tieba.baidu.com/f?kw=%E5%98%89%E6%99%9A%E9%A5%AD" target="_blank">💖百度贴吧嘉晚饭吧</a>
+          </li>
+          <li style="padding: 0.8rem; background: rgba(255, 0, 0, 0.15); border-radius: 8px; text-align: center;">
+            <a href="https://weibo.com/p/10080873b6a1db706bb60861fb1133f04dd3d5" target="_blank">💖微博嘉晚饭超话</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2 style="color: var(--primary);">🧭 枝江导航</h2>
+        <ul style="list-style: none; padding: 0;">
+          <li style="padding: 0.8rem; background: rgba(0, 128, 0, 0.15); border-radius: 8px; text-align: center;">
+            <a href="https://www.tovery.net/guestbook.asp?user=jiawanfan&page=1" target="_blank">✍新留言板</a>
+          </li>
+          <li style="padding: 0.8rem; background: rgba(255, 0, 0, 0.15); border-radius: 8px; text-align: center;">
+            <a href="https://music.163.com/djradio?id=965819766&uct2=U2FsdGVkX19fsyQEercRu2r0yQFlCk5dqmtPgqFiqr8=" target="_blank">🎶网易云播客</a>
+          </li>
+          <li style="padding: 0.8rem; background: rgba(255, 192, 203, 0.20); border-radius: 8px; text-align: center;">
+            <a href="https://space.bilibili.com/2004948206/favlist?fid=1378158206&ftype=create" target="_blank">📽B站二创</a>
+          </li>
+          <li style="padding: 0.8rem; background: rgba(240,10,240, 0.15); border-radius: 8px; text-align: center;">
+            <a href="https://tp.wjx.top/vm/ryALD4K.aspx#" target="_blank">❗攻受大斗虫❗</a>
+          </li>
+          <li style="padding: 0.8rem; background: rgba(135,206,235, 0.15); border-radius: 8px; text-align: center;">
+            <a href="https://jiawanfan.netlify.app/" target="_blank">✉️旧版镜像</a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2022-2025 嘉晚饭站. 由 <a href="#">糖瓷碗</a> 创立以纪念. 
+        <a href="disclaimer.html" style="margin-left:10px;">网站声明</a>
+        <a href="https://space.bilibili.com/14313817" style="margin-left:10px;">联系站长</a>
+    </p>
+  </footer>
+
+  <!-- 引入页面功能脚本 -->
+  <script src="js/script.js"></script>
+</body>
+</html>
